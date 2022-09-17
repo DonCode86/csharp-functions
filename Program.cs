@@ -15,7 +15,7 @@ void StampaArray(int[] array, char openP = '[', char closeP = ']')
 
     Console.Write(array[i]);
 
-    Console.Write(closeP);
+    Console.WriteLine(closeP);
 }
 Console.WriteLine("La lista dei numeri è: ");
 StampaArray(arrayInput);
@@ -51,3 +51,6 @@ int sommaElementiArray(int[] array)
 }
 Console.WriteLine("La somma dei numeri dell'array è: ");
 Console.WriteLine(sommaElementiArray(arrayInput));
+
+Console.WriteLine("La somma dei numeri dell'array elevati al quadrato è: ");
+Console.WriteLine(sommaElementiArray(ElevaArrayAlQuadrato(arrayInput)));
