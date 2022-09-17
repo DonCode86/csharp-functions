@@ -1,5 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int[] arrayInput = { 2, 6, 7, 5, 3, 9 };
+
+Console.WriteLine("Da quanti numeri vuoi che sia composto il tuo array?");
+int userArryLength = Convert.ToInt32(Console.ReadLine());
+int[] arrayInput = new int[userArryLength];
+for (int i = 0; i < arrayInput.Length; i++)
+{
+    arrayInput[i] = Convert.ToInt32(Console.ReadLine());
+}
+for (int i = 0; i < arrayInput.Length; i++)
+{
+    Console.WriteLine(arrayInput[i] + " ");
+}
 
 void StampaArray(int[] array, char openP = '[', char closeP = ']')
 {
