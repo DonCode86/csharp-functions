@@ -2,15 +2,14 @@
 
 Console.WriteLine("Da quanti numeri vuoi che sia composto il tuo array?");
 int userArryLength = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Inserisci i tuoi numeri");
 int[] arrayInput = new int[userArryLength];
 for (int i = 0; i < arrayInput.Length; i++)
 {
     arrayInput[i] = Convert.ToInt32(Console.ReadLine());
 }
-for (int i = 0; i < arrayInput.Length; i++)
-{
-    Console.WriteLine(arrayInput[i] + " ");
-}
+
+
 
 void StampaArray(int[] array, char openP = '[', char closeP = ']')
 {
